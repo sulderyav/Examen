@@ -1,0 +1,21 @@
+function wrapping(gifts) {
+  const wrappedGifts = [];
+
+  gifts.forEach(gift => {
+    const wrappedGift = `*${gift}*\n`;
+    const wrappingLength = wrappedGift.length;
+
+    // Agregar líneas de papel de regalo arriba y abajo del regalo
+    let wrappingTop = '';
+    let wrappingBottom = '';
+    for (let i = 0; i < wrappingLength; i++) {
+      wrappingTop += '*';
+      wrappingBottom += '*';
+    }
+
+    // Agregar el regalo envuelto al array
+    wrappedGifts.push(`${wrappingTop}\n${wrappedGift}${wrappingBottom}\n`);
+  });
+
+  return wrappedGifts;
+}
