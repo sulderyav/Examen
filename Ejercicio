@@ -19,3 +19,8 @@ function wrapping(gifts) {
 
   return wrappedGifts;
 }
+const gifts = ['cat', 'game', 'socks'];
+const wrapped = wrapping(gifts);
+console.log(wrapped);
+
+Para envolver cada regalo en papel de regalo, podemos crear una función llamada wrapping que acepte un array de regalos como argumento. Dentro de la función, podemos recorrer el array de regalos y envolver cada regalo en papel de regalo utilizando los símbolos *.
